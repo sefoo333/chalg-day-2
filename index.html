@@ -19,6 +19,107 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- ====== -->
+
+     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: hsl(0, 0%, 8%);
+            font-family: "Inter", sans-serif;
+        }
+
+        .par {
+            padding: 55px;
+            background-color: hsl(0, 0%, 12%);
+            text-align: center;
+            border-radius: 20px;
+            padding-left: 60px;
+            padding-right: 60px;
+
+            & .main {
+
+
+                color: hsl(0, 0%, 100%);
+
+                & .image img {
+                    margin-bottom: 20px;
+                    border-radius: 50%;
+                    width: 120px;
+                }
+
+                & .title {
+                    margin-bottom: 30px;
+
+                    & h1 {
+                        margin-bottom: 10px;
+                        font-weight: 600;
+                    }
+
+                    & h2 {
+                        font-size: 17px;
+                        color: hsl(75, 94%, 57%);
+                    }
+
+                }
+            }
+
+            p {
+                margin-bottom: 16px;
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            & .links {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                & .link {
+                    background-color: hsl(0, 0%, 20%);
+                    width: 355px;
+                    margin-top: 20px;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 19px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    font-weight: 700;
+                    border-radius: 10px;
+                    transition: 0.5s;
+
+                    &:hover {
+                        background-color: hsl(75, 94%, 57%);
+                        color: hsl(0, 0%, 8%);
+                    }
+                }
+
+
+            }
+
+
+        }
+
+        @media (max-width:767px) {
+
+            .par {
+                padding: 26px !important;
+            }
+
+            .link {
+                width: 335px !important;
+                font-size: 16px !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
